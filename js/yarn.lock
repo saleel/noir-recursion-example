@@ -2,17 +2,9 @@
 # yarn lockfile v1
 
 
-"@aztec/bb.js@^0.82.2":
-  version "0.82.3"
-  resolved "https://registry.yarnpkg.com/@aztec/bb.js/-/bb.js-0.82.3.tgz#bcd4cd14de7faca537f1298ce56a53b1e1d892a6"
-  integrity sha512-jtnCqf+/QLw5yJGOmy818RMQqzHzHqcROtTdQZJybSxp0z3h76xpLSwoDQUBmZZVbP9e46FJjOLqB6gM9gY5cw==
-  dependencies:
-    comlink "^4.4.1"
-    commander "^12.1.0"
-    debug "^4.3.4"
-    fflate "^0.8.0"
-    pako "^2.1.0"
-    tslib "^2.4.0"
+"@aztec/bb.js@link:../../aztec-packages/barretenberg/ts":
+  version "0.0.0"
+  uid ""
 
 "@esbuild/aix-ppc64@0.25.2":
   version "0.25.2"

@@ -5,7 +5,7 @@
     "generate-proof": "tsx ./generate-proof.ts"
   },
   "dependencies": {
-    "@aztec/bb.js": "^0.82.2",
+    "@aztec/bb.js": "link:../../aztec-packages/barretenberg/ts",
     "@noir-lang/noir_js": "1.0.0-beta.3"
   },
   "devDependencies": {
