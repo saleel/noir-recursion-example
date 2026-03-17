@@ -1,28 +1,30 @@
 # Noir Recursion Example
 
-E2E example of generating a recursive proof using Noir and bb.js.
 
-- Circuits in `circuits/` directory
-- JS code in `js/generate-proof.ts`
-
-
-### Version used
-```
-Noir 1.0.0-beta.3
-bb 0.82.2
-```
-
-### Steps
-
-1. Compile the circuits
+### Setup
 
 ```bash
-(cd circuits && ./build.sh)
+bbup -v 4.1.0-nightly.20260317
 ```
 
-2. Generate inner and recursive proof, and verify the recursive proof
-
+### Run
 ```bash
-(cd js && yarn install)
+# Build circuits and generate solidity verifier
+(cd circuits && ./build.sh)   
+
+# Generate recursive proof in JS
+(cd js && yarn)
 (cd js && yarn generate-proof)
+
+# Verify the recursive proof in Solidity
+(cd contract && forge test --optimize --optimizer-runs 5000 --gas-report -vvvvv)
 ```
+
+
+### Notes
+
+To test with a different version of bb
+
+- `bbup -v 4.0.0-nightly.20260131`
+- Change to same version in js/package.json
+- Change to same version in circuits/recursive/Nargo.toml
