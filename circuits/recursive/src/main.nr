@@ -9,6 +9,6 @@ fn main(
         verification_key,
         proof,
         public_inputs,
-        0x24307603029bfc32dfe1542017de27f08dd1aa3e2546b804917fab0e0cb56cd9,
+        0x26e361d28a1621a5534655d055110da5bbb288b0396a0edf4bf18843df6db484,
     );
 }
